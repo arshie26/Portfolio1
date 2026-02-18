@@ -582,7 +582,7 @@ input:focus, textarea:focus{
 
 /* QUALITY */
 
-#quality{
+#approach{
     margin: 200px 50px;
 }
 
@@ -679,7 +679,7 @@ input:focus, textarea:focus{
 
 /* VALUES */
 
-#values{
+#client{
     margin: 250px 50px;
 }
 
@@ -690,11 +690,11 @@ input:focus, textarea:focus{
     align-items: center;
 }
 
-#values .section__title{
+#client .section__title{
     margin-bottom: 32px;
 }
 
-#values .section__image--container{
+#client .section__image--container{
     width: 56%;
 }
 
