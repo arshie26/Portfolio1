@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/69b822bc74.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "YOUR_PUBLIC_KEY",
+        });
+    })();
+    </script>
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav class="navigation__bar">
+            <figure class="logo__container">
+                <img id="personal-logo" src="./assets/A logo-white.png">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    nav__link--mobile
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link" onclick="toggleTheme()">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    "><i class="fas fa-adjust"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header div class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title--secondary">I'm Arsh</h1>
+                <p class="header__para">I'm a <span class="orange">Frontend Software Engineer</span> with a strong passion for building web applications with great user experiences.</p>
+                <p class="header__para">Here's a bit more <a onclick="toggleModal()" class="orange">about me</a></p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/arshie26/" class="social__link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="" class="social__link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="Arsh Agarwal web dev resume current 2026.pdf" download class="social__link" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a class="scroll" href="#projects">
+            <div class="scroll__icon click">
+            </div>
+        </a>
+        <a href="#">
+            <button class="mail__btn" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h1 class="modal__title">Here's a bit about me.</h1>
+                <h6 class="modal__sub-title">Web Developer.</h6>
+                <p class="modal__para">I'm a 21 year-old Australian frontend <b class="orange">software engineer</b> with experience developing websites for top-tech companies like <b class="orange">Google and Canva.</b>
+                    I currently solve extremely difficult engineering problems every day with React, TypeScript and MobX in Canva's Video team. 
+                </p>
+                <div class="modal__languages">
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/HTML5_Badge.svg.png" alt="" class="language__img html">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/css-131-722685.png" alt="" class="language__img css">
+                        </figure>
+                        <span class="language__name">CSS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/javascript-1-225993.png" alt="" class="language__img js">
+                        </figure>
+                        <span class="language__name">JavaScipt</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/typescript-3521774-2945272.png" alt="" class="language__img ts">
+                        </figure>
+                        <span class="language__name">TypeScript</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/HTML5_Badge.svg.png" alt="" class="language__img html">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/css-131-722685.png" alt="" class="language__img css">
+                        </figure>
+                        <span class="language__name">CSS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/javascript-1-225993.png" alt="" class="language__img js">
+                        </figure>
+                        <span class="language__name">JavaScipt</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img class="language__img" src="./assets/typescript-3521774-2945272.png" alt="" class="language__img ts">
+                        </figure>
+                        <span class="language__name">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <figure class="close__icon" onclick="toggleModal()">
+                    <i class="fas fa-times click"></i>
+                </figure>
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h1>
+                <h3 class="modal__sub-title modal__sub-title--contact">I'm currenty open to new opportunities</h6>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label" value="Name">Name</label>
+                        <input class="input" name="user_name" type="text"></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" value="E-mail">Email</label>
+                        <input class="input" name="user_email" type="email"></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" value="Message">Message</label>
+                        <textarea class="input" name="message" type="text"></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit" type="submit">Send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking with you soon.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/circle.svg" class="shape shape--3">
+        <img src="./assets/triangle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/circle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="orange">projects</span></h1>
+                <div class="project">
+                    <div class="project__wrapper" >
+                        <img class="project__img" src="./P1-kelsi/portfolio sneak.png">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P1-kelsi/index.html">The Joie Lab</a></h1>
+                            <h3 class="project__languages">Kartra</h3>
+                            <p class="project__description"> How I helped a creative founder untangle broken automations, reconnect her user experience, and rebuild trust in her website — without starting over.</p>
+                            <br>
+                            <p class="project__description"> After I worked with her, her user experience was more professional, and she experienced more success and confidence in her business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__wrapper">
+                        <img class="project__img" src="./P2-cannings/portfolio sneak 6.png">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P2-cannings/index.html">Bilingual Roadmap</a></h1>
+                            <h3 class="project__languages">Wordpress</h3>
+                            <p class="project__description"> How I helped a bilingual family coach untangle tech decisions and create a sales page to launch her book, consultancy, and future course. </p>
+                            <br>
+                            <p class="project__description"> After I created the sales page for her, the coach was able to launch her book and take her website forward. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__wrapper">
+                        <img class="project__img" src="assets/google mockup.png">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P3-kirby/index.html">KA Consulting</a></h1>
+                            <h3 class="project__languages">Wordpress</h3>
+                            <p class="project__description"> Kirby was running a successful business and needed to create a lead magnet page. She was already past deadline for the launch.</p>
+                            <br>
+                            <p class="project__description"> With my help, she was able to successfully launch a starter website for her launch.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__wrapper">
+                        <img class="project__img" src="./P4-tqme/TQME TDA hero.jpg">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P4-tqme/index.html">The Quarry Modern Eatery</a></h1>
+                            <h3 class="project__languages">HTML, CSS, JS</h3>
+                            <p class="project__description">Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.</p>
+                            <br>
+                            <p class="project__description">The client was very happy with the redesign and felt much more confident about advertising their business moving forward.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__wrapper">
+                        <img class="project__img" src="./P5-versaagency/Picture3.png">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P5-versaagency/index.html">VersaAgency</a></h1>
+                            <h3 class="project__languages">HTML, CSS, JS</h3>
+                            <p class="project__description"> Francesco wanted to modernize the agency's website, update the portfolio, and optimize the User Experience. </p>
+                            <br>
+                            <p class="project__description"> As an employee and project manager, I was able to lead the project to his satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__wrapper">
+                        <img class="project__img" src="./P6-bourbonfool/Picture1.png">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P6-bourbonfool/index.html">BourbonFool</a></h1>
+                            <h3 class="project__languages">Wordpress</h3>
+                            <p class="project__description">Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.</p>
+                            <br>
+                            <p class="project__description">The client was very happy with the redesign and felt much more confident about advertising their business moving forward.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__wrapper">
+                        <img class="project__img" src="./P7-intergalactic/Picture.png">
+                        <div class="project__description--container">
+                            <h1 class="project__title"><a href="/Portfolio1/P7-intergalactic/index.html">Intergalactic Education</a></h1>
+                            <h3 class="project__languages">ASP.NET, C#</h3>
+                            <p class="project__description"> A game development studio building a custom website needed it to function as both a user portal and digital storefront.</p>
+                            <br>
+                            <p class="project__description">The platform had to integrate new features while maintaining compatibility with existing systems — all while supporting a growing user base.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <a href="#">
+                    <figure class="logo__container footer">
+                        <img id="personal-logo-footer" src="./assets/logo.svg">
+                    </figure>
+                </a>
+                <div class="footer__links">
+                    <a class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">Github</a>
+                    <a class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">LinkedIn</a>
+                    <a onclick="toggleModal()" href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                    ">Contact</a>
+                    <a class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white 
+                    last__link
+                    ">Resume</a>
+                </div>
+                <p class="footer__copyright">Copyright 2025 David Bragg</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
